@@ -1,0 +1,181 @@
+.master-container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.topbar {
+    height: 75px
+}
+
+.title {
+    margin-left: 5px;
+}
+
+.cactus-svg {
+    width: 50px;
+    height: 50px;
+    filter: invert(42%) sepia(38%) saturate(3940%) hue-rotate(92deg) brightness(116%) contrast(105%);
+}
+
+.thermometer-svg {
+    width: 25px;
+    height: 25px;
+    filter: invert(42%) sepia(38%) saturate(3940%) hue-rotate(92deg) brightness(116%) contrast(105%);
+    margin-top: -35px;
+    margin-left: -13px;
+}
+
+.content {
+    flex: 2;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.graph-column {
+    background-color: #fffeee;
+    height: 100%;
+    border-bottom: 1px solid grey;
+    border-top: 2px solid grey;
+}
+
+.schematic-column {
+    background-color: #F5FFF5;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-top: 2px solid grey;
+}
+
+.rectangle {
+    fill: lightgreen;
+    stroke: darkgreen;
+    stroke-width: 5;
+    fill-opacity: 0.1;
+    stroke-opacity: 1;
+}
+
+.table {
+    fill: brown;
+    stroke: brown;
+    stroke-width: 4;
+    fill-opacity: 0.4;
+    stroke-opacity: 0.5;
+}
+
+.doors {
+    fill-opacity: 0.1;
+    stroke-opacity: 1;   
+    fill: darkgreen; 
+    stroke: darkgreen;
+    stroke-width: 7;
+}
+
+.kuktasbox {
+    fill: lightgreen;
+    stroke-opacity: 1;   
+    stroke: #006400;
+    stroke-width: 4; 
+}
+
+.kuktas-logo1 {
+    width: 45px;
+    height: 45px;
+    filter: invert(18%) sepia(44%) saturate(4727%) hue-rotate(109deg) brightness(95%) contrast(103%);
+}
+
+.kuktas-logo2 {
+    width: 25px;
+    height: 25px;
+    filter: invert(18%) sepia(44%) saturate(4727%) hue-rotate(109deg) brightness(95%) contrast(103%);
+}
+
+.kuktas-line {
+    fill-opacity: 0.1;
+    stroke-opacity: 1;   
+    fill: black; 
+    stroke: black;
+    stroke-width: 4;
+    stroke-dasharray: 4;
+}
+
+.sensor-outline {
+    fill: darkgrey;
+    stroke: grey;
+    stroke-width: 5;
+    fill-opacity: 1;
+    stroke-opacity: 1;
+}
+
+.sensor {
+    width: 25px;
+    height: 25px;
+    filter: invert(47%) sepia(6%) saturate(0%) hue-rotate(237deg) brightness(97%) contrast(87%);
+}
+
+.text-temp {
+    font: bold 18px sans-serif; 
+}
+
+.text-temp2 {
+    font: bold 16px sans-serif; 
+}
+
+.error {
+    color: red !important;
+    fill: red !important;
+    font: bold 25px sans-serif;
+}
+
+.warning {
+    color: orange;
+    fill: #ffa500;
+    font: bold 15px sans-serif;
+}
+
+footer {
+    padding: 5px;
+    min-height: 20px;
+    background-color: #EEEEEE;
+}
+
+footer > span {
+    float: right;
+    margin-right: 10px;
+}
+
+.exclamation-error {
+    width: 125px;
+    height: 125px;
+    filter: invert(16%) sepia(100%) saturate(7179%) hue-rotate(357deg) brightness(102%) contrast(118%);
+    animation: blinker 2s linear infinite;
+}
+
+.exclamation-warning {
+    width: 125px;
+    height: 125px;
+    filter: invert(60%) sepia(91%) saturate(1602%) hue-rotate(1deg) brightness(105%) contrast(104%);
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.top-spacer {
+    margin-top: 5px;
+    margin-left: 10px;
+}
